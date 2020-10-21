@@ -2,7 +2,7 @@
 Controlling a device through Blockchain, where the device is plugged to Raspberry Pi.
 
 # Brief Intro
-In this project, there is a need of Laptop where local blockchain (ganache) is running and also there is a need of Raspberry Pi to which a bulb is connected at GPIO21.
+In this project, there is a need of Laptop where local blockchain (ganache) is running and also there is a need of Raspberry Pi to which a bulb is connected at GPIO21. When you press Bulb On button on UI, then the bulb connected to Raspberry Pi will be on and the respective transaction hash would be displayed on the UI and same applies to Bulb Off.
 
 # Requirements on Laptop
 sudo pip3 install web3 <br/>
