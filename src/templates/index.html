@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>IoT Bulb Control using Blockchain</title>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+  		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  		<style>
+  			.container {
+  				padding: 2 rem 0 rem;
+			}
+
+			h4 {
+  				margin: 2 rem 0 rem 1 rem;
+			}
+  		</style>
+	</head>
+	<body>
+		<center>
+			<h1>IoT Bulb Control using Blockchain </h1>
+			<h5>{{m}}</h5>
+		</center>
+		<div class="container">
+  			<div class="row">
+    			<div class="col-12">
+					<table class="table">
+		  				<thead>
+		    			<tr>
+		      					<th scope="col">ID</th>
+		      					<th scope="col">Action</th>
+		      					<th scope="col">Transaction Hash</th>
+		    				</tr>
+		  				</thead>
+		  				<tbody>
+		    			<tr>
+		      				<th scope="row">1</th>
+		      				<td>
+		      					<form action="/on/" method="post">
+		      						<button type="submit" class="btn btn-primary">Bulb On</button>
+		      					</form>
+		      				</td>
+		      				<td>{{thash}}</td>
+		    			</tr>
+		    			<tr>
+		      				<th scope="row">2</th>
+		      				<!--<td class="w-25">
+			      				<img src="{{url_for('static', filename='off.jpg')}}" class="img-fluid img-thumbnail" alt="Sheep">
+		      				</td>-->
+		      				<td>
+		      					<form action="/off/" method="post">
+		      						<button type="submit" class="btn btn-warning">Bulb Off</button>
+		      					</form>
+		      				</td>
+		      				<td>{{thash}}</td>
+		    			</tr>
+		  				</tbody>
+					</table>   
+    			</div>
+  			</div>
+		</div>
+	</body>
+</html>
