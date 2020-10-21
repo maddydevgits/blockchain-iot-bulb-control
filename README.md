@@ -5,9 +5,9 @@ Controlling a device through Blockchain, where the device is plugged to Raspberr
 In this project, there is a need of Laptop where local blockchain (ganache) is running and also there is a need of Raspberry Pi to which a bulb is connected at GPIO21.
 
 # Requirements on Laptop
-sudo pip3 install web3
-sudo pip3 install paho-mqtt
-sudo pip3 install flask
+sudo pip3 install web3 <br/>
+sudo pip3 install paho-mqtt <br/>
+sudo pip3 install flask <br/>
 
 # Requirements on Raspberry Pi
 sudo pip3 install paho-mqtt
